@@ -1,0 +1,90 @@
+body{
+  margin:0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(to left bottom,#65488C,#58535E);
+}
+
+.container{
+  background-color: rgba(255,255,255,.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,.3);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  margin: 30px;
+  text-align: center;
+}
+
+.heading{
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.quote{
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.author{
+  font-size: 25px;
+  font-style: italic;
+  margin: 10px;
+}
+
+.categoryButton{
+  padding: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+#category{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+#botton{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+select{
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, .25);
+  width: 150px;
+}
+
+select:hover{
+  background-color: rgba(255,255,255,.6);
+  box-shadow: 0 4px 4px rgba(0,0,0,.3);
+  transition: all 300ms ease-in-out;
+  color: purple;
+}
+
+.btn{
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, .25);
+  width: 150px;
+
+}
+
+.btn:hover{
+  background-color: rgba(255,255,255,.6);
+  box-shadow: 0 4px 4px rgba(0,0,0,.3);
+  transition: all 300ms ease-in-out;
+  color: purple;
+}
