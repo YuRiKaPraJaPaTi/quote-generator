@@ -1,0 +1,77 @@
+
+//quotes array
+const quotes= [
+  {
+    "text": "1. Quiet people have the loudest minds",
+    "author": "Stephen Hwaking",
+    "category":"Science"
+  },
+  {
+    "text": "2. Setting goals is the first step in turning the invisible into the visible.",
+    "author": "Tony Robbins",
+    "category": "Work"
+  },
+  {
+    "text": "3. One never notices what has been done; one can only see what remains to be done.",
+    "author": "Marie Curie",
+    "category":"Science"
+  },
+  {
+    "text": "4. People say nothing is impossible, but I do nothing every day.",
+    "author": "Winnie the Pooh",
+    "category": "Funny"
+  },
+  {
+    "text": "5. I never dreamed about success. I worked for it.",
+    "author": "Estée Lauder",
+    "category": "Success"
+  },
+  {
+    "text": "6. Either you run the day or the day runs you.",
+    "author": "Jim Rohn",
+    "category": "Work"
+  },
+  {
+    "text": "7. Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable.",
+    "author": "John Wooden",
+    "category": "Success"
+  },
+  {
+    "text": "8. Work until your bank account looks like a phone number.",
+    "author": "Unknown",
+    "category": "Funny"
+  }
+]
+// let quotes = [];
+
+//   async function loadQuotes() {
+//     const response = await fetch('quotes.json');
+//     quotes = await response.json();
+//   }
+
+function displayQuote(){
+  const selectedCategory = document.getElementById("categorySelect").value;
+
+  // const categoryQuotes = quotes[selectedCategory];
+
+  const categoryQuotes = selectedCategory === "All" 
+  ? quotes 
+  : quotes.filter(quote => quote.category == selectedCategory);
+
+  let randomIndex = Math.floor(Math.random() * categoryQuotes.length);
+
+  let randomQuote = categoryQuotes[randomIndex]
+
+  document.getElementById("quote").textContent = randomQuote.text;
+  document.getElementById("author").textContent = "— " + randomQuote.author;
+
+}
+
+document.getElementById("random").addEventListener("click", displayQuote);
+
+// document.addEventListener("DOMContentLoaded", async () => {
+//   await loadQuotes();
+//   document.getElementById("random").addEventListener("click", displayQuote);
+// });
+
+

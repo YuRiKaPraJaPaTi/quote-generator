@@ -16,30 +16,36 @@
 
     <h2 class="quote">
       <i class="fa-solid fa-quote-left"></i>
-        <span id="quote">Quote</span>
+        <span id="quote"></span>
       <i class="fa-solid fa-quote-right"></i>
     </h2>
-    <p class="author" id="author">~author</p>
+    <p class="author" id="author"></p>
     
     <div class="categoryButton">
       <div>
         <label>Category select:</label><br>
-        <select>
-          <option value="all">ALL</option>
-          <option value="science">Science</option>
-          <option value="success">Success</option>
-          <option value="funny">Funny</option>
-          <option value="work">Work</option>
+        <select id="categorySelect">
+          <option value="All">ALL</option>
+          <option value="Science">Science</option>
+          <option value="Success">Success</option>
+          <option value="Funny">Funny</option>
+          <option value="Work">Work</option>
         </select>
       </div>
       <div>
-        <button class="btn">Get a QUOTE</button>
+        <button class="btn" id="random" >Get a QUOTE</button>
       </div>
     </div>
     <div>
-    <button class="btn">Previous</button>
-    <button class="btn">Next</button>
+    <button class="btn" id="previous">Previous</button>
+    <button class="btn" id="next">Next</button>
   </div>
   </div>
+
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
