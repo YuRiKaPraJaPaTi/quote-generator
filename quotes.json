@@ -1,0 +1,144 @@
+{
+  "Science":[
+    {
+      "text": "Quiet people have the loudest minds",
+      "author": "Stephen Hwaking"
+    },
+    {
+      "text": "One never notices what has been done; one can only see what remains to be done.",
+      "author": "Marie Curie"
+    },
+    {
+      "text": "The science of today is the technology of tomorrow.",
+      "author": "Edward Teller "
+    },
+    {
+      "text": "Science is the great antidote to the poison of enthusiasm and superstition.",
+      "author": "Adam Smith"
+    },
+    {
+      "text": "No great discovery was ever made without a bold guess.",
+      "author": "Issac Newton"
+    },
+    {
+      "text": "A discovery is said to be an accident meeting a prepared mind.",
+      "author": "Louis Pasteur "
+    },
+    {
+      "text": "Science does not know its debt to imagination.",
+      "author": "Ralph Waldo Emerson "
+    },
+    {
+      "text": "Wisdom begins in wonder.",
+      "author": "Socrates"
+    }
+  ],
+
+  "Funny": [
+    {
+      "text": "The elevator to success is out of order. You’ll have to use the stairs, one step at a time.",
+      "author": "Joe Girard"
+    },
+    {
+      "text": "Be a positive energy trampoline—absorb what you need and rebound more back.",
+      "author": "Dave Carolan"
+    },
+    {
+      "text": "People often say that motivation doesn’t last. Well, neither does bathing—that’s why we recommend it daily.",
+      "author": "Zig Ziglar"
+    },
+    {
+      "text": "Work until your bank account looks like a phone number.",
+      "author": "Unknown"
+    },
+    {
+      "text": "I am so clever that sometimes I don’t understand a single word of what I am saying.",
+      "author": "Oscar Wilde"
+    },
+    {
+      "text": "People say nothing is impossible, but I do nothing every day.",
+      "author": "Winnie the Pooh"
+    },
+    {
+      "text": "Life is like a sewer … what you get out of it depends on what you put into it.",
+      "author": "Tom Lehrer"
+    },
+    {
+      "text": "I always wanted to be somebody, but now I realize I should have been more specific.",
+      "author": "Lily Tomlin"
+    }
+  ],
+
+  "Success": [
+    {
+      "text": "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+      "author": "Winston Churchill"
+    },
+    {
+      "text": "It is better to fail in originality than to succeed in imitation.",
+      "author": "Herman Melville"
+    },
+    {
+      "text": "The road to success and the road to failure are almost exactly the same.",
+      "author": "Colin R. Davis"
+    },
+    {
+      "text": "Success usually comes to those who are too busy to be looking for it.",
+      "author": "Henry David Thoreau"
+    },
+    {
+      "text": "Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.",
+      "author": "Dale Carnegie"
+    },
+    {
+      "text": "There are three ways to ultimate success: The first way is to be kind. The second way is to be kind. The third way is to be kind.",
+      "author": "Mister Rogers"
+    },
+    {
+      "text": "Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable.",
+      "author": "John Wooden"
+    },
+    {
+      "text": "I never dreamed about success. I worked for it.",
+      "author": "Estée Lauder"
+    },
+    {
+      "text": "Success is getting what you want; happiness is wanting what you get.",
+      "author": "W. P. Kinsella"
+    }
+  ],
+  
+  "Work": [
+    {
+      "text": "Concentrate all your thoughts upon the work in hand. The sun’s rays do not burn until brought to a focus.",
+      "author": "Alexander Graham Bell"
+    },
+    {
+      "text": "Either you run the day or the day runs you.",
+      "author": "Jim Rohn"
+    },
+    {
+      "text": "I’m a great believer in luck, and I find the harder I work, the more I have of it.",
+      "author": "Thomas Jefferson"
+    },
+    {
+      "text": "When we strive to become better than we are, everything around us becomes better too.",
+      "author": "Paulo Coelho"
+    },
+    {
+      "text": "Opportunity is missed by most people because it is dressed in overalls and looks like work.",
+      "author": "Thomas Edison"
+    },
+    {
+      "text": "Setting goals is the first step in turning the invisible into the visible.",
+      "author": "Tony Robbins"
+    },
+    {
+      "text": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.",
+      "author": "Steve Jobs"
+    }
+  ]
+      
+  
+  
+}
