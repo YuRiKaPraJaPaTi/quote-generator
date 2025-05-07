@@ -49,6 +49,10 @@ const quotes= [
 //     quotes = await response.json();
 //   }
 
+let currentIndex;
+
+
+
 function displayQuote(){
   const selectedCategory = document.getElementById("categorySelect").value;
 
@@ -60,14 +64,42 @@ function displayQuote(){
 
   let randomIndex = Math.floor(Math.random() * categoryQuotes.length);
 
+  currentIndex = randomIndex;
+
   let randomQuote = categoryQuotes[randomIndex]
 
   document.getElementById("quote").textContent = randomQuote.text;
   document.getElementById("author").textContent = "— " + randomQuote.author;
-
 }
-
 document.getElementById("random").addEventListener("click", displayQuote);
+
+
+function previousQuote(){
+  const selectedCategory = document.getElementById("categorySelect").value;
+  const categoryQuotes = selectedCategory === "All" 
+    ? quotes 
+    : quotes.filter(quote => quote.category === selectedCategory);
+
+  currentIndex = (currentIndex - 1 + categoryQuotes.length) % categoryQuotes.length;
+  const selectedQuote = categoryQuotes[currentIndex];
+  document.getElementById("quote").textContent = selectedQuote.text;
+  document.getElementById("author").textContent = "— " + selectedQuote.author;
+}
+document.getElementById("previous").addEventListener("click", previousQuote);
+
+
+function nextQuote(){
+  const selectedCategory = document.getElementById("categorySelect").value;
+  const categoryQuotes = selectedCategory === "All" 
+    ? quotes 
+    : quotes.filter(quote => quote.category === selectedCategory);
+
+  currentIndex = (currentIndex + 1) % categoryQuotes.length;
+  const selectedQuote = categoryQuotes[currentIndex];
+  document.getElementById("quote").textContent = selectedQuote.text;
+  document.getElementById("author").textContent = "— " + selectedQuote.author;
+}
+document.getElementById("next").addEventListener("click", nextQuote);
 
 // document.addEventListener("DOMContentLoaded", async () => {
 //   await loadQuotes();
