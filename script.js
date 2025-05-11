@@ -106,4 +106,36 @@ document.getElementById("next").addEventListener("click", nextQuote);
 //   document.getElementById("random").addEventListener("click", displayQuote);
 // });
 
+function copyQuote(){
+  const quoteText = document.getElementById('quote').innerText;
+  navigator.clipboard.writeText(quoteText)
+    .then(() => alert('Quote copied!'))
+    .catch(() => alert('Failed to copy.'));
+}
+document.getElementById("copy-button").addEventListener("click", copyQuote);
+
+
+// Increase font size
+document.getElementById('increase-font').addEventListener('click', function () {
+  const quote = document.getElementById('quote');
+  const author = document.getElementById('author');
+  changeFontSize(quote, 1.2);
+  changeFontSize(author, 1.2);
+});
+
+// Decrease font size
+document.getElementById('decrease-font').addEventListener('click', function () {
+  const quote = document.getElementById('quote');
+  const author = document.getElementById('author');
+  changeFontSize(quote, 0.8);
+  changeFontSize(author, 0.8);
+});
+
+// Helper to change font size
+function changeFontSize(element, factor) {
+  const currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+  const currentSizeNum = parseFloat(currentSize);
+  element.style.fontSize = (currentSizeNum * factor) + 'px';
+}
+
 

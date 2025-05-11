@@ -11,7 +11,18 @@ html, body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  background-color: var(--secondary-color);
 
+}
+
+:root{
+  --primary-color: dimgray ;
+  --secondary-color: white;
+}
+
+.darkTheme{
+  --primary-color: rgb(136, 167, 136) ;
+  --secondary-color: rgb(39, 40, 92);
 }
 
 .main{
@@ -29,6 +40,7 @@ html, body {
   justify-content: space-between;
   padding: 0 3vw;
   border-bottom: 2px solid #dadada;
+  color: var(--primary-color);
 }
 
 .nav-part{
@@ -51,10 +63,17 @@ html, body {
   display: none;
 }
 
+#icon{
+  width: 30px;
+  cursor: pointer;
+  /* background-color: rgb(45, 24, 152); */
+}
+
 .content{
   height: calc(100% - 50px);
   width: 100%;
   display: flex;
+  color: var(--primary-color);
   }
 
 .left{
@@ -87,6 +106,7 @@ select{
   border-radius: 5px;
   padding: 1vw 2.5vw;
   cursor: pointer;
+  
   
 }
 
@@ -138,11 +158,11 @@ select:hover{
   font-weight: bold;
 }
 
-#copy-button {
+/* #copy-button {
   font-size: 1.5vw;
   cursor: pointer;
   align-self: flex-end;
-}
+} */
 
 .icon-bar {
   display: flex;
@@ -162,10 +182,10 @@ select:hover{
 
 @media (max-width:600px){
 
-  html, body {
+  /* html, body {
     
     overflow: scroll;
-  }
+  } */
   .nav{
     padding: 0 5vw;
     height: 40px;
@@ -236,8 +256,8 @@ select:hover{
 
   }
 
-  .icon-bar , #copy-button{
-    font-size: 3.5vw;
+  #increase-font, #decrease-font , #copy-button{
+    font-size: 4vw;
 
     
   }
