@@ -13,7 +13,8 @@ A simple and responsive web application to generate random quotes based on selec
 - Previous and Next button to navigate sequentially
 - Toggle between light theme and dark theme
 - Copy icon to copy the displayed quote
-- + and - icon to increase and decrease the font size of displayed quote
+- **+** button to increase font size.
+- `-` icon to decrease font size.
 
 ## 📁 Project Structure
 📦quote-generator/
