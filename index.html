@@ -7,22 +7,34 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1 class="heading">QUOTE GENERATOR</h1>
 
-    <h2 class="quote">
-      <i class="fa-solid fa-quote-left"></i>
-        <span id="quote">quote</span>
-      <i class="fa-solid fa-quote-right"></i>
-    </h2>
-    <p class="author" id="author"></p>
-    
-    <div class="categoryButton">
-      <div>
+
+<div class="main">
+  <div class="nav">
+    <h2>Logo</h2>
+    <div class="nav-part">
+      <h4>Home</h4>
+      <h4>About</h4>
+      <h4>Contact</h4>
+      <i class="ri-menu-line"></i>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="left">
+      <h1>Generate the <span>Quote</span></h1>
+
+      <div class="categoryButton">
+        <div>
         <label>Category select:</label><br>
         <select id="categorySelect">
           <option value="All">ALL</option>
@@ -31,20 +43,41 @@
           <option value="Funny">Funny</option>
           <option value="Work">Work</option>
         </select>
-      </div>
-      <div>
+        </div>
         <button class="btn" id="random" >Get a QUOTE</button>
       </div>
+      
     </div>
-    <div>
-    <button class="btn" id="previous">Previous</button>
-    <button class="btn" id="next">Next</button>
+
+    <div class="right">
+      
+      
+      <div class="quoteBox">
+        <div class="icon-bar">
+          <i class="fa fa-clone" id="copy-button"></i>
+          <i class="ri-add-line" id="increase-font"></i>
+          <i class="ri-subtract-line" id="decrease-font"></i>
+        </div>
+        <h2 class="quote">
+          <i class="fa-solid fa-quote-left"></i>
+            <span id="quote">quote</span>
+          <i class="fa-solid fa-quote-right"></i>
+        </h2>
+      
+        <p class="author" id="author"></p>
+       
+        
+      </div>
+
+      <div class="nav-buttons">
+        <button class="btn" id="previous">Previous</button>
+        <button class="btn" id="next">Next</button>
+      </div>
+    </div>
   </div>
-  </div>
+</div>
 
-
-
-<script src="script.js"></script>
+<script src="script.js"></script> 
 
 </body>
 
