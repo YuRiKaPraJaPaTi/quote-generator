@@ -16,7 +16,7 @@ html, body {
 }
 
 :root{
-  --primary-color: dimgray ;
+  --primary-color: rgb(185, 42, 42) ;
   --secondary-color: white;
 }
 
@@ -41,12 +41,14 @@ html, body {
   padding: 0 3vw;
   border-bottom: 2px solid #dadada;
   color: var(--primary-color);
+ 
 }
 
 .nav-part{
   display: flex;
   gap: 4vw;
   align-items: center;
+ 
 
 }
 
@@ -88,7 +90,7 @@ html, body {
 }
 
 .left h1 span{
-  color:blueviolet;
+  color: blueviolet;
 
 }
 
@@ -189,7 +191,7 @@ select:hover{
   .nav{
     padding: 0 5vw;
     height: 40px;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
 
   .nav h2{
@@ -205,6 +207,8 @@ select:hover{
   .nav i{
     display:block;
   }
+
+  
 
   .content{
     height: calc(100% - 40px);
